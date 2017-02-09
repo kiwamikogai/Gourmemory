@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -41,6 +42,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    class ViewController: UIViewController {
+        
+        @IBOutlet weak var testMapView: MKMapView!
+        
+        //最初からあるメソッド
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            //中心座標
+            let center = CLLocationCoordinate2DMake(35.690553, 139.699579)
+            
+            //表示範囲
+            let span = MKCoordinateSpanMake(0.001, 0.001)
+            
+            //中心座標と表示範囲をマップに登録する。
+            let region = MKCoordinateRegionMake(center, span)
+            testMapView.setRegion(region, animated:true)
+            
+            //地図にピンを立てる。
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = CLLocationCoordinate2DMake(35.690553, 139.699579)
+            testMapView.addAnnotation(annotation)
+            
+        }
+    }
+    
+    
 }
 
