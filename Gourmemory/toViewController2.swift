@@ -21,8 +21,21 @@ class ViewController2: UIViewController {
         super.didReceiveMemoryWarning()
         
     }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+
+    @IBAction func OKButton (_ segue:UIStoryboardSegue){
+
+        dismiss(animated: true, completion: nil )
+
+    }
+
+    }
+
     
-}
+
 
 
 

@@ -35,6 +35,7 @@ class ViewController: UIViewController , MKMapViewDelegate , CLLocationManagerDe
     @IBOutlet var imageView : UIImageView!
     @IBOutlet var mapView:MKMapView!
     @IBOutlet var selectedImageView : UIImageView!
+
 //    @IBOutlet weak var pickerView: UIPickerView! {
 //        didSet {
 //            pickerView.dataSource = self
@@ -63,16 +64,7 @@ class ViewController: UIViewController , MKMapViewDelegate , CLLocationManagerDe
         testManager.requestWhenInUseAuthorization()
         
         super.viewDidLoad()
-        
-        myTextField.text = "Hello Swift!!"
-      
-        myTextField.delegate = self
-      
-        myTextField.borderStyle = UITextBorderStyle.roundedRect
-        
-        myTextField.layer.position = CGPoint(x:self.view.bounds.width/2,y:100);
-                self.view.addSubview(myTextField)
-        
+    
     }
     
     override func didReceiveMemoryWarning() {
@@ -100,6 +92,17 @@ class ViewController: UIViewController , MKMapViewDelegate , CLLocationManagerDe
         }
         
         imagePicker.dismiss(animated: true, completion: nil)
+
+        //画面遷移
+        func goBack(_ segue:UIStoryboardSegue){}
+
+        func goNext(_ sender:UIButton) {
+
+            let next = storyboard!.instantiateViewController(withIdentifier: "nextView")
+            self.present(next,animated: true, completion: nil)
+            
+        }
+
         
     }
     
@@ -117,12 +120,7 @@ class ViewController: UIViewController , MKMapViewDelegate , CLLocationManagerDe
         
     }
     
-   // @IBAction func returnTapped　(){
-    
-    
-    
-    
-    //}
+
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         for location in locations {
@@ -138,11 +136,6 @@ class ViewController: UIViewController , MKMapViewDelegate , CLLocationManagerDe
             annotaion.coordinate = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
             mapView.addAnnotation(annotation)
             
-        }
-        
-        func didReceiveMemoryWarning() {
-            super.didReceiveMemoryWarning()
-            // Dispose of any resources that can be recreated.
         }
     }
     
@@ -186,8 +179,6 @@ class ViewController: UIViewController , MKMapViewDelegate , CLLocationManagerDe
             
             return true
         }
-        
     }
-        
     }
 

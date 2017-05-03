@@ -196,7 +196,7 @@
 				TargetAttributes = {
 					832E2C071E4348D4005DCB53 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = UWJ4P79UVK;
+						DevelopmentTeam = SLHYE76MHB;
 						ProvisioningStyle = Automatic;
 					};
 					832E2C1B1E4348D5005DCB53 = {
@@ -415,10 +415,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UWJ4P79UVK;
+				DEVELOPMENT_TEAM = SLHYE76MHB;
 				INFOPLIST_FILE = Gourmemory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kii.Gourmemory;
+				PRODUCT_BUNDLE_IDENTIFIER = tv.shinoki.Gourmemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -428,10 +428,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UWJ4P79UVK;
+				DEVELOPMENT_TEAM = SLHYE76MHB;
 				INFOPLIST_FILE = Gourmemory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kii.Gourmemory;
+				PRODUCT_BUNDLE_IDENTIFIER = tv.shinoki.Gourmemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
