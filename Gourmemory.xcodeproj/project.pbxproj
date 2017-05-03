@@ -14,6 +14,7 @@
 		832E2C161E4348D4005DCB53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832E2C141E4348D4005DCB53 /* LaunchScreen.storyboard */; };
 		832E2C211E4348D5005DCB53 /* GourmemoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832E2C201E4348D5005DCB53 /* GourmemoryTests.swift */; };
 		832E2C2C1E4348D5005DCB53 /* GourmemoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832E2C2B1E4348D5005DCB53 /* GourmemoryUITests.swift */; };
+		8367C85E1E936ADC007D080C /* toViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8367C85D1E936ADC007D080C /* toViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		832E2C271E4348D5005DCB53 /* GourmemoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GourmemoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		832E2C2B1E4348D5005DCB53 /* GourmemoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GourmemoryUITests.swift; sourceTree = "<group>"; };
 		832E2C2D1E4348D5005DCB53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8367C85D1E936ADC007D080C /* toViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = toViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +102,9 @@
 				832E2C0B1E4348D4005DCB53 /* AppDelegate.swift */,
 				832E2C0D1E4348D4005DCB53 /* ViewController.swift */,
 				832E2C0F1E4348D4005DCB53 /* Main.storyboard */,
-				832E2C121E4348D4005DCB53 /* Assets.xcassets */,
+				8367C85D1E936ADC007D080C /* toViewController2.swift */,
 				832E2C141E4348D4005DCB53 /* LaunchScreen.storyboard */,
+				832E2C121E4348D4005DCB53 /* Assets.xcassets */,
 				832E2C171E4348D4005DCB53 /* Info.plist */,
 			);
 			path = Gourmemory;
@@ -262,6 +265,7 @@
 			files = (
 				832E2C0E1E4348D4005DCB53 /* ViewController.swift in Sources */,
 				832E2C0C1E4348D4005DCB53 /* AppDelegate.swift in Sources */,
+				8367C85E1E936ADC007D080C /* toViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +510,7 @@
 				832E2C321E4348D5005DCB53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		832E2C331E4348D5005DCB53 /* Build configuration list for PBXNativeTarget "GourmemoryTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +519,7 @@
 				832E2C351E4348D5005DCB53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		832E2C361E4348D5005DCB53 /* Build configuration list for PBXNativeTarget "GourmemoryUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +528,7 @@
 				832E2C381E4348D5005DCB53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
